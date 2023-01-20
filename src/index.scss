@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.btn-secondary {
+ --bs-btn-color: black;
+    --bs-btn-bg: #BABFC4;
+    --bs-btn-border-color: #BABFC4;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: #BABFC4;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: black;
+    --bs-btn-active-bg: #565e64;
+    --bs-btn-active-border-color: #51585e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #black;
+    --bs-btn-disabled-bg: #BABFC4;
+    --bs-btn-disabled-border-color: #BABFC4;
+ 
+}
+
+.repostar {
+      display: flex;
+    justify-content: space-between;
+}
+.loader {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  height: 5vh;
+  width: 5vh;
+  border: 6px solid rgba(0, 174, 239, 0.2);
+  border-top-color: rgba(0, 174, 239, 0.8);
+  border-radius: 100%;
+  animation: rotation 0.6s infinite linear 0.25s;
+
+  /* the opacity is used to lazyload the spinner, see animation delay */
+  /* this avoid the spinner to be displayed when visible for a very short period of time */
+  opacity: 0;
+}
+@keyframes rotation {
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(359deg);
+  }
+}
